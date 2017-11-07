@@ -128,14 +128,14 @@ Module.register("MMM-Netatmo-Thermostat", {
 			var theName = document.createElement("div");
                         wrapper.id = "circle";
                         wrapper.innerHTML = this.formatTemp(this.data.modules[0].measured.temperature);
-                        if (this.data.modules[0].setpoint.setpoint_mode === "program") {
-                                if (this.data.modules[0].therm_relay_cmd == 0) {
-                                        wrapper.className = "cooling";
-                                } else {
-                                        wrapper.className = "heating";
-                                }
-                        } else if (this.data.modules[0].setpoint.setpoint_mode === "off") {
+			if (this.data.modules[0].setpoint.setpoint_mode === "off") {
                                 wrapper.className = "off";
+                        } else {
+				if (this.data.modules[0].therm_relay_cmd === 0) {
+	                        	wrapper.className = "cooling";
+	                        } else {
+	                                wrapper.className = "heating";
+	                        }
                         }
                         wrapper.appendChild(theName);
 		}
