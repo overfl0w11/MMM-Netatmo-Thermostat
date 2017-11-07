@@ -1,0 +1,97 @@
+/*
+ *
+ * MMM-Netatmo-Thermostat
+ *
+ * 
+ * MIT Licensed.
+ *
+ * Custom here your css module
+ *
+ */
+
+.MMM-Netatmo-Thermostat .heating {
+  width: 100px;
+  height: 100px;
+  background: red;
+  background:radial-gradient(red, #ff4d4d);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  line-height:100px;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.MMM-Netatmo-Thermostat .cooling {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  background:radial-gradient(blue, #33ccff);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  line-height:100px;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.MMM-Netatmo-Thermostat .off {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  background: grey;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  line-height:100px;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.MMM-Netatmo-Thermostat .heating .fanIcon,
+.MMM-Netatmo-Thermostat .cooling .fanIcon {
+  filter: brightness(200%) saturate(0%);
+}
+
+.MMM-Netatmo-Thermostat .off,
+.MMM-Netatmo-Thermostat .heating,
+.MMM-Netatmo-Thermostat .cooling {  
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  font-size: 45px;
+  line-height: 120px;
+  border: none;
+}
+
+.MMM-Netatmo-Thermostat .off {
+  background: rgb(74, 83, 91);
+  background: -moz-linear-gradient(90deg, rgb(74, 83, 91) 0%, rgb(40, 48, 55) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(74, 83, 91) 0%, rgb(40, 48, 55) 100%);
+  background: -o-linear-gradient(90deg, rgb(74, 83, 91) 0%, rgb(40, 48, 55) 100%);
+  background: -ms-linear-gradient(90deg, rgb(74, 83, 91) 0%, rgb(40, 48, 55) 100%);
+  background: linear-gradient(180deg, rgb(74, 83, 91) 0%, rgb(40, 48, 55) 100%);
+}
+
+.MMM-Netatmo-Thermostat .heating {
+  background: rgb(238, 127, 0);
+  background: -moz-linear-gradient(90deg, rgb(238, 127, 0) 0%, rgb(229, 89, 40) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(238, 127, 0) 0%, rgb(229, 89, 40) 100%);
+  background: -o-linear-gradient(90deg, rgb(238, 127, 0) 0%, rgb(229, 89, 40) 100%);
+  background: -ms-linear-gradient(90deg, rgb(238, 127, 0) 0%, rgb(229, 89, 40) 100%);
+  background: linear-gradient(180deg, rgb(238, 127, 0) 0%, rgb(229, 89, 40) 100%);
+  color: #FFF;
+}
+
+.MMM-Netatmo-Thermostat .cooling {
+  background: rgb(5, 95, 255);
+  background: -moz-linear-gradient(90deg, rgb(5, 95, 255) 0%, rgb(1, 57, 255) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(5, 95, 255) 0%, rgb(1, 57, 255) 100%);
+  background: -o-linear-gradient(90deg, rgb(5, 95, 255) 0%, rgb(1, 57, 255) 100%);
+  background: -ms-linear-gradient(90deg, rgb(5, 95, 255) 0%, rgb(1, 57, 255) 100%);
+  background: linear-gradient(180deg, rgb(5, 95, 255) 0%, rgb(1, 57, 255) 100%);
+  color: #FFF;
+}
