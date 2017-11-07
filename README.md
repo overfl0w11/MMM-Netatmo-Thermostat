@@ -4,6 +4,9 @@ The MMM-Netatmo-Thermostat module is a module for the [MagicMirror²](https://gi
 
 This module displays your Netatmo thermostat information. It is a very basic module that displays the current temperature of the room and indicates whether the thermostat is heating up or not (thanks to the color displayed by the module).
 
+![netatmo-heating](https://user-images.githubusercontent.com/8746134/32518926-5ccb2162-c40b-11e7-8a5d-2da147049e4b.png)
+![netatmo-cooling](https://user-images.githubusercontent.com/8746134/32520309-cd8f37a4-c40f-11e7-89b4-aba68b9f6f1f.png)
+
 ## Installing the module
 
 Run `git clone https://github.com/overflOw11/MMM-Netatmo-Thermostat` from inside your `MagicMirror/modules` folder.
