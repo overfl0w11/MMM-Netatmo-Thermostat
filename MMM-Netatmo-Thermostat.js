@@ -131,10 +131,10 @@ Module.register("MMM-Netatmo-Thermostat", {
 			if (this.data.modules[0].setpoint.setpoint_mode === "off") {
                                 wrapper.className = "off";
                         } else {
-				if (this.data.modules[0].therm_relay_cmd === 0) {
-	                        	wrapper.className = "cooling";
+				if (this.data.modules[0].therm_relay_cmd !== 0 || this.data.modules[0].anticipating === true) {
+	                        	wrapper.className = "heating";
 	                        } else {
-	                                wrapper.className = "heating";
+	                                wrapper.className = "cooling";
 	                        }
                         }
                         wrapper.appendChild(theName);
