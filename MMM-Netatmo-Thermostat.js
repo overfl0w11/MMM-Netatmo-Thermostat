@@ -145,7 +145,8 @@ Module.register("MMM-Netatmo-Thermostat", {
 	getScripts: function() {
 		return [
 			'q.min.js',
-			'String.format.js'
+			'String.format.js',
+			'jquery-3.2.1.min.js'
 		];
 	},
 
