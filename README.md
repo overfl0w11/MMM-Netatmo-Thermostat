@@ -35,7 +35,12 @@ var config = {
 		clientId: "<YOUR_CLIENT_ID>",
 		clientSecret: "<YOUR_CLIENT_SECRET>",
 		refreshToken: "<REFRESH_TOKEN>",
-		updateInterval: 600000
+		updateInterval: 600000,
+		color: {
+			heating: "orange",
+			cooling: "blue",
+			off: "grey"
+		}
             }
         }
     ]
@@ -50,3 +55,4 @@ var config = {
 | `clientSecret`   | *Required* Your client secret from https://dev.netatmo.com/myaccount/. <br><br>**Type:** `String` <br>This value is **REQUIRED**.
 | `refreshToken`   | *Required* Your refresh token from the curl command previously describe. <br><br>**Type:** `String` <br> This value is **REQUIRED**.
 | `updateInterval` | *Optional* Update interval of your Netatmo module. <br><br>**Type:** `int`(milliseconds) <br>Default 60000 milliseconds (1 minute).
+| `color`	   | *Optional* Tab which define color for 'heating', 'cooling' and 'off' state. <br><br>**Type:** `String[]`<br>Default : heating: orange, cooling: blue, off: grey.<br>Possible values are 'blue', 'orange', 'red', 'green', 'purple', 'yellow', 'grey'.

@@ -19,7 +19,12 @@ Module.register("MMM-Netatmo-Thermostat", {
       			authPayload: 'grant_type=refresh_token&refresh_token={0}&client_id={1}&client_secret={2}',
       			dataEndpoint: 'api/getthermostatsdata',
       			dataPayload: 'access_token={0}'
-    		}
+    		},
+		color: {
+			off: "grey",
+			heating: "orange",
+			cooling: "blue"
+		}
 	},
 
 	requiresVersion: "2.1.0", // Required version of MagicMirror
@@ -129,12 +134,12 @@ Module.register("MMM-Netatmo-Thermostat", {
                         wrapper.id = "circle";
                         wrapper.innerHTML = this.formatTemp(this.data.modules[0].measured.temperature);
 			if (this.data.modules[0].setpoint.setpoint_mode === "off") {
-                                wrapper.className = "off";
+                                wrapper.className = "off " + this.config.color.off;
                         } else {
 				if (this.data.modules[0].therm_relay_cmd !== 0 || this.data.modules[0].anticipating === true) {
-	                        	wrapper.className = "heating";
+	                        	wrapper.className = "heating " + this.config.color.heating;
 	                        } else {
-	                                wrapper.className = "cooling";
+	                                wrapper.className = "cooling " + this.config.color.cooling;
 	                        }
                         }
                         wrapper.appendChild(theName);
