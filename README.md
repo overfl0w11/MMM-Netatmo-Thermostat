@@ -35,7 +35,7 @@ var config = {
 		clientId: "<YOUR_CLIENT_ID>",
 		clientSecret: "<YOUR_CLIENT_SECRET>",
 		refreshToken: "<REFRESH_TOKEN>",
-		updateInterval: 600000,
+		updateInterval: 60000,
 		color: {
 			heating: "orange",
 			cooling: "blue",
